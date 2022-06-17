@@ -1,0 +1,121 @@
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 1px solid black; */
+}
+.parent{
+    border: 1px solid black;
+    width: 50%;
+    height: 190px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    border-radius: 50%;
+    margin: auto;
+    max-width: 500px;
+    animation: kay 10s infinite alternate;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(1fr,2fr,1fr);
+    border: 1px solid black;
+}
+.item-1{
+   display: flex;
+   
+        
+}
+ul{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    padding: 20px;
+    border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    border-radius:100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: kay 10s infinite alternate;
+}
+.circle-2{
+   padding: 10px;
+    border: 2px dashed black;
+    width: 20px;
+    height: 20px;
+    border-radius:100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: kay 10s infinite alternate;
+}
+.child{
+    border: 1px solid black;
+}
+@keyframes kay{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.child:nth-child(5){
+    background-color: crimson;
+    color: white;
+    grid-column:1/4 ;
+}
+.child:nth-child(1){
+    background-color: crimson;
+    color: white;
+    grid-row:1/4 ;
+}
+.child:nth-child(4){
+    background-color: crimson;
+    color: white;
+    grid-column:2/4 ;
+}
+.cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    grid-gap: 10px;
+    width: 100%;
+}
+.parent-1{
+    display:flex;
+    width: 350px;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    background-color: rgb(12, 12, 10);
+    margin: auto;
+    position: relative;
+}
+img{
+    width: 150px;
+    margin: 40px;
+    position: relative;
+    right: 9px;
+    overflow: hidden;
+
+}
+.child-1{
+    border: 20px solid rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 50%;
+    /* box-shadow: 0px 10px 10px grey ; */
+}
+.child-2{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(12, 72, 112);
+}
